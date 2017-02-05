@@ -1,0 +1,44 @@
+nav#menuStripe
+  div#leftStripe &nbsp;
+
+  nav#mainMenu
+    h2 &#9776;&nbsp;Menu
+    ul.visibleMenu
+      li
+        a(href="index.html") Home
+      li
+        a(href="activities.html") Activities
+      li
+        a(href="committee.html") Committee
+      li
+        a(href="http://www.napierstudents.com/organisation/societies/cybersecurity/" target="_blank") Join
+      li
+        a(href="contact.html") Contact
+
+  div#rightStripe &nbsp;
+
+script.
+  var $ = function (el) { return document.querySelector(el) }
+  var menuList = $('nav#mainMenu ul');
+  var menuH2 = $('nav#mainMenu h2');
+
+  // Init.
+  menuList.classList.remove('visibleMenu');
+
+  // Toggle.
+  menuH2.addEventListener('click', function () {
+    menuList.classList.toggle('visibleMenu')
+  })
+
+  // Active menu.
+  function setActive() {
+    anchors = $('nav').getElementsByTagName('a');
+    for(i=0; i<anchors.length; i++) {
+      if(document.location.href.indexOf(anchors[i].href) >= 0) {
+        console.log(anchors[i])
+        anchors[i].classList.add('active');
+      }
+    }
+  }
+
+  setActive()
