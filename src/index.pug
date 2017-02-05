@@ -4,7 +4,19 @@ html(lang='en')
     include includes/head.pug
 
   body
-    include includes/header.pug
+    header
+      div#logo
+        a(href="index.html")
+          img(src="img/logo.png" alt="ENUSEC logo")
+
+      include includes/nav.pug
+
+      h1#title
+        a(href="index.html") Edinburgh Napier University Security Society
+
+      h3#tagline
+        | Have an interest in hacking, digital forensics, malware analysis, penetration testing or infosec in general? <br /><span class="bold">We have a spot for you.</span>
+
 
     div#content
       include pages/homepage.pug

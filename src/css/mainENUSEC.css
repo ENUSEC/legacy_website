@@ -98,7 +98,7 @@ a{
 	color:#5aaad8;
 	text-decoration:none;}
 
-a:hover, h1#title a:hover, nav#mainMenu ul li a:hover,nav#mainMenu ul li a#wiki:hover, nav#footerMenu ul li a:hover{
+a:hover, h1#title a, h1#title a:hover, nav#mainMenu ul li a:hover,nav#mainMenu ul li a#wiki:hover, nav#footerMenu ul li a:hover{
 	color:#d41e46;}
 
 nav#mainMenu a.active,
@@ -120,7 +120,7 @@ h1#title{
 	text-transform: uppercase;
 	font-weight: normal;
 	display: block;
-	font-size: 2.2em;}
+	font-size: 1.6em;}
 
 h1#title, #logo, h3#tagline, footer, #singleColumn{
     width: 590px;
@@ -129,8 +129,11 @@ h1#title, #logo, h3#tagline, footer, #singleColumn{
 	margin-bottom: 50px;
 }
 
+h1#title {
+  margin-bottom: 0;
+}
+
 h1#title a{
-	color:black;
 	display: block;}
 
 
@@ -142,8 +145,10 @@ h1#title a{
 /* --- Menu --- */
 
 #menuStripe{
-    width: 885px;
+  width: 885px;
 	margin: 0 auto;
+  margin-bottom: 80px;
+  height: 30px;
 }
 
 #leftStripe, #rightStripe{
@@ -207,7 +212,7 @@ nav#mainMenu ul li a#wiki{
 
 h3#tagline{
 	clear: both;
-	margin-top:160px;
+	margin-top:20px;
 	font-size:1.4em;
 	text-align:left;
 	font-weight:normal;
@@ -283,6 +288,53 @@ article#page h2{
 	max-width:500px;
 	height:auto;
 	}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid figure {
+  flex-basis: 25%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid a {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid img {
+  max-width: 100%;
+}
 
 /* --- Footer --- */
 
