@@ -1,7 +1,11 @@
-$(document).ready(function() {
-	$("nav#mainMenu ul").removeClass("visibleMenu");
+var $ = document.querySelector
+var menuList = $('nav#mainMenu ul');
+var menuH2 = $('nav#mainMenu h2');
 
-	$("nav#mainMenu h2").click(function () {
-		$("nav#mainMenu ul").toggleClass("visibleMenu");
-	});
-});
+// Init.
+menuList.classList.remove('visibleMenu');
+
+// Toggle.
+menuH2.addEventListener('click', function () {
+  menuList.classList.toggleClass('visibleMenu')
+})
