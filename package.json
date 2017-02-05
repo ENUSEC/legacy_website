@@ -4,8 +4,8 @@
   "description": "Enusec>_ website.",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/.bin/pug -p ./src/* -w -o ./build",
-    "build": "node_modules/.bin/pug -p ./src/* -o ./build"
+    "dev": "node_modules/.bin/pug ./src -o ./build -w",
+    "build": "node_modules/.bin/pug ./src -o ./build"
   },
   "repository": {
     "type": "git",
