@@ -1,0 +1,24 @@
+{
+  "name": "enusec.org",
+  "version": "1.0.0",
+  "description": "Enusec>_ website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enusec/enusec.org.git"
+  },
+  "keywords": [
+    "enusec",
+    "security",
+    "society"
+  ],
+  "author": "Dan Mindru <mindrudan@gmail.com> (http://mindrudan.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enusec/enusec.org/issues"
+  },
+  "homepage": "https://github.com/enusec/enusec.org#readme"
+}
