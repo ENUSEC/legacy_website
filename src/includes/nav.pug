@@ -35,7 +35,6 @@ script.
     anchors = $('nav').getElementsByTagName('a');
     for(i=0; i<anchors.length; i++) {
       if(document.location.href.indexOf(anchors[i].href) >= 0) {
-        console.log(anchors[i])
         anchors[i].classList.add('active');
       }
     }
