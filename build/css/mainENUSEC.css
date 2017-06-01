@@ -296,6 +296,8 @@ article#page h2{
   -ms-flex-pack: distribute;
     justify-content: space-around;
   width: 100%;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .grid figure {
